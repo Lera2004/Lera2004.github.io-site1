@@ -1,0 +1,80 @@
+@media (max-width: 1280px) {
+    .text3 {
+        width: 1000px;
+    }
+    .h12 {
+        width: 100%;
+    }
+    .line5 {
+        width: 100%;
+    }
+    .line6 {
+        width: 100%;
+    }
+    .line7 {
+        width: 100%;
+    }
+    
+.text4 {
+    width: 100%
+}
+.text5{
+    margin-top: 50px;
+}
+.logo2{
+    margin-top: 40px;
+}
+.h15{
+    margin-top: 290px;
+}
+.line12{
+    margin-top: 160px;
+}
+.Button{
+    left: 950px !important;
+}
+.Button2{
+    width: 10%;
+}
+.name3{
+    width: 15%;
+}
+.name2{
+    width: 40%;
+}
+.name4{
+    width: 40%;
+}
+
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+    .header {
+        border: none;
+        z-index: 99;
+    }
+    .w-\[50px\] {
+       width: 16.4% !important;
+    }
+    .Button{
+        left: 670px !important;
+    }
+    .h15{
+        left: 670px !important;
+    }
+    .line12{
+        left: 670px !important;
+    }
+    .text7{
+        left: 670px !important;
+    }
+    .line13{
+        left: 670px !important;
+    }
+    .Button2 {
+        width: 14%;
+    }
+}
