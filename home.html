@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турагенція</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Стили для мобильных устройств */
+    @media screen and (max-width: 850px) {
+      .text2 {
+        display: none;
+        text-align: center;
+      }
+      .text { 
+        text-align: center;
+      }
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        z-index: 9999;
+        color: aquamarine;
+       
+      }
+
+      
+      .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        padding: 50px;
+        z-index: 99999;
+      }
+      .nav-menu.active {
+        display: block;
+      }
+      .close-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+      }
+      .header2 {
+        background-color: #162e44;
+        height: 70px;
+      }
+      .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav-menu li {
+        margin: 20px 0;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        max-width: 150px;
+      }
+    }
+    /* Стили для компьютерной версии */
+    @media screen and (min-width: 851px) {
+      .menu-icon,
+      .nav-menu .close-icon {
+        display: none;
+      }
+      .nav-menu .text2 {
+        display: flex;
+      }
+      .header2 {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+      .nav-menu {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .nav-menu li {
+        list-style: none;
+        margin-left: 20px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .logo img {
+        margin-right: 10px; 
+        max-width: 150px;
+      }
+    }
+    #hero {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+  <script> 
+    // JavaScript для переключения видимости меню
+    window.addEventListener('DOMContentLoaded', () => {
+      const menuIcon = document.querySelector('.menu-icon');
+      const navMenu = document.querySelector('.nav-menu');
+      const closeIcon = document.querySelector('.close-icon');
+      menuIcon.addEventListener('click', () => {
+        navMenu.classList.add('active');
+      });
+      closeIcon.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="header2">
+    <nav>
+      <ul class="text2 nav-menu">
+        <span class="close-icon">&#10006;</span>
+        <div class="logo" >
+          <a href="home.html"><img src="/img/logo7.png" alt="Логотип"></a>
+        </div>
+        <div>
+          <li><a href="home.html">Головна</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="tours.html">Пакети турів</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="menu-icon" style="top: 20px;">&#9776;</div>
+  </header>
+  <main>
+    <section id="hero" style="background-image: url(/img/slider10.jpg);">
+      <h1 class="text">Ласкаво просимо в нашу турагенцію</h1>
+      <b><p class="text">Ми допоможемо вам організувати незабутню подорож!</p></b>
+      <a href="about.html" class="btn">Дізнатися більше</a>
+    </section>
+  </main>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/" class="social-icon"><img src="/img/instagram.png"></a>
+      <a href="https://www.facebook.com/" class="social-icon"><img src="/img/facebook.png"></a>
+      <a href="https://telegram.org/" class="social-icon"><img src="/img/telegram.png"></a>
+      <a href="https://www.viber.com/" class="social-icon"><img src="/img/viber.png"></a>
+    </div>
+    
+    <p>Авторські права &copy; 2023 ADVENTURA. Усі права захищені.</p>
+  </footer>
+</body>
+</html>
