@@ -802,16 +802,7 @@ body{
 
 }
 
-@media screen and (max-width: 768px) {
-  .banner-text {
-    font-size: 14px; /* Уменьшите размер шрифта на ваш выбор */
-  }
 
-  .banner-content .heading,
-  .detail-content .genre {
-    font-size: 18px;
-  }
-}
 
 @media (min-width: 1200px) {
 
