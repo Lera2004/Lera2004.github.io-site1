@@ -808,6 +808,9 @@ body{
   .heading {
     font-size: 14px; /* Уменьшите размер шрифта на ваш выбор */
   }
+    .banner-content .heading {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
