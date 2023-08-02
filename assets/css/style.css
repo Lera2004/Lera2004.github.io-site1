@@ -803,12 +803,12 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-  .banner-text,
-  .genre,
-  .heading {
+  .banner-text {
     font-size: 14px; /* Уменьшите размер шрифта на ваш выбор */
   }
-    .banner-content .heading {
+
+  .banner-content .heading,
+  .detail-content .genre {
     font-size: 18px;
   }
 }
